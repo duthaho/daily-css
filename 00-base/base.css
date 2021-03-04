@@ -1,0 +1,24 @@
+:root {
+  --color-white: #fff;
+  --color-pink: #f28ab2;
+  --color-grey-1: #c9cec9;
+  --color-grey-5: #617d98;
+  --color-grey-10: #f1f5f8;
+  --color-black: #222;
+  --color-primary: #c3996b;
+
+  --spacing: 0.1rem;
+  --spacing-large: 0.25rem;
+
+  --font-weight-small: 400;
+
+  --font-size-large: 1.2rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
