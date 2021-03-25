@@ -1,0 +1,106 @@
+body {
+  background: #f7f7f9;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(8, 3rem);
+  grid-auto-rows: 3rem;
+  grid-gap: 0.3rem;
+}
+
+.content span {
+  background: #fdd835;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  box-shadow: 0 0.15rem 0 #ff8f00;
+  font-weight: 600;
+  font-size: 1.75em;
+  transition-duration: 0.3s;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 769px) {
+  .content .span-1 {
+    grid-column: 6 / span 3;
+  }
+
+  .content:hover span:first-of-type {
+    transform: translate3d(20rem, 12rem, 0) rotate(-15deg);
+  }
+
+  .content:hover span:nth-of-type(2) {
+    transform: translate3d(-12rem, 5rem, 0) rotate(7deg);
+  }
+
+  .content:hover span:nth-of-type(3) {
+    transform: translate3d(11rem, -6rem, 0) rotate(-12deg);
+  }
+
+  .content:hover span:nth-of-type(4) {
+    transform: translate3d(11rem, 3rem, 0) rotate(-17deg);
+  }
+
+  .content:hover span:nth-of-type(5) {
+    transform: translate3d(19rem, 4rem, 0) rotate(11deg);
+  }
+
+  .content:hover span:nth-of-type(6) {
+    transform: translate3d(-20rem, 11rem, 0) rotate(15deg);
+  }
+
+  .content:hover span:nth-of-type(7) {
+    transform: translate3d(29rem, -6rem, 0) rotate(17deg);
+  }
+
+  .content:hover span:nth-of-type(8) {
+    transform: translate3d(7rem, -6.5rem, 0) rotate(13deg);
+  }
+
+  .content:hover span:nth-of-type(9) {
+    transform: translate3d(5rem, 7.5rem, 0) rotate(20deg);
+  }
+
+  .content:hover span:nth-of-type(10) {
+    transform: translate3d(17rem, 6rem, 0) rotate(5deg);
+  }
+
+  .content:hover span:nth-of-type(11) {
+    transform: translate3d(-15rem, -8rem, 0) rotate(-6deg);
+  }
+
+  .content:hover span:nth-of-type(12) {
+    transform: translate3d(-15rem, -1rem, 0) rotate(10deg);
+  }
+
+  .content:hover span:nth-of-type(13) {
+    transform: translate3d(-13.5rem, 3.5rem, 0) rotate(-20deg);
+  }
+
+  .content:hover span:nth-of-type(14) {
+    transform: translate3d(-10rem, -0.5rem, 0) rotate(-26deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(6, 2.8rem);
+    grid-auto-rows: 2.8rem;
+    grid-gap: 0.3rem;
+  }
+
+  .content .span-2 {
+    grid-column: 4 / span 3;
+  }
+}
