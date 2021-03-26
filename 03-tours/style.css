@@ -1,0 +1,96 @@
+body {
+  background: #f1f5f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  width: 90vw;
+  max-width: 620px;
+  margin: 5rem auto;
+}
+
+section {
+  letter-spacing: var(--spacing);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  background: #49a6e9;
+}
+
+.tour {
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 2rem 0;
+  transition: var(--transition);
+}
+
+.tour:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tour img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.tour footer {
+  padding: 1.5rem 2.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.info .money {
+  color: #49a6e9;
+  background: #ebf7ff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+footer p {
+  color: #617d98;
+}
+
+footer button {
+  margin: 1rem auto 0;
+  width: 200px;
+  display: block;
+  color: #bb2525;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #bb2525;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .title h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 0.875rem;
+  }
+}
