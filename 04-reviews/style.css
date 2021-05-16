@@ -1,0 +1,143 @@
+body {
+  background: #f1f5f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+section {
+  width: 80vw;
+  max-width: 620px;
+  letter-spacing: var(--spacing);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  background: #49a6e9;
+}
+
+.review {
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.review:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+
+.image::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #49a6e9;
+  top: -0.25rem;
+  right: -0.5rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(25%);
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fff;
+  background: #49a6e9;
+  border-radius: 50%;
+}
+
+.author {
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+}
+
+.job {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: #49a6e9;
+  font-size: 0.85rem;
+}
+
+.info {
+  margin-bottom: 0.75rem;
+  color: #617d98;
+}
+
+.slide button {
+  background: transparent;
+  border: none;
+  color: #8bcbf9;
+  font-size: 1.25rem;
+  cursor: pointer;
+  outline: none;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+}
+
+.slide button:hover {
+  color: #49a6e9;
+}
+
+.surprise {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: #ebf7ff;
+  text-transform: capitalize;
+  color: #49a6e9;
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.surprise:hover {
+  background: #49a6e9;
+  color: #063251;
+}
