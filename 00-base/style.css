@@ -4,10 +4,9 @@ body {
 }
 
 .page {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   width: 90vw;
-  max-width: 900px;
-  padding: 15px 40px 40px;
+  max-width: 1120px;
 }
 
 .hero h1 {
@@ -78,34 +77,51 @@ body {
   letter-spacing: var(--spacing-large);
 }
 
-.content article {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 280px;
+.content {
+  display: grid;
+  gap: 3rem 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+
+.content .article {
   background: #fff;
   border-radius: 0.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+  transition: 0.3s ease-in-out all;
+  overflow: hidden;
+  text-decoration: none;
+  max-width: 90vw;
+}
+
+.content .article:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .image {
+  height: 15rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  position: relative;
   overflow: hidden;
 }
 
 .image img {
-  width: 100%;
+  bottom: 0;
   height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
   object-fit: cover;
 }
 
 .info {
-  flex: 1;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: #fff;
+  text-align: center;
+  border-bottom: 8px solid var(--color-primary);
 }
 
 .number {
@@ -116,53 +132,7 @@ body {
   font-size: 21px;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  margin-top: 4px;
-  border-bottom: 8px solid var(--color-primary);
-  padding-bottom: 14px;
+  padding: 14px;
   text-align: center;
-}
-
-.title a {
-  text-decoration: none;
-  color: var(--color-black);
-}
-
-.title a:hover {
-  color: var(--color-primary);
-}
-
-@media only screen and (min-width: 769px) {
-  .image {
-    width: 50%;
-    height: inherit;
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .page {
-    padding: 0;
-  }
-
-  .content article {
-    flex-direction: column;
-    border-bottom: 8px solid var(--color-primary);
-  }
-
-  .image {
-    flex: 2;
-    width: 100%;
-    border-radius: 0;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-  }
-
-  .info {
-    width: 100%;
-  }
-
-  .title {
-    border: none;
-  }
+  color: #0f172a;
 }
