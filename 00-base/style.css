@@ -21,6 +21,7 @@ body {
 
 .hero a {
   text-decoration: none;
+  transition: var(--transition);
   color: var(--color-black);
 }
 
@@ -91,6 +92,7 @@ body {
   overflow: hidden;
   text-decoration: none;
   max-width: 90vw;
+  border-bottom: 8px solid var(--color-primary);
 }
 
 .content .article:hover {
@@ -121,7 +123,6 @@ body {
 .info {
   background: #fff;
   text-align: center;
-  border-bottom: 8px solid var(--color-primary);
 }
 
 .number {
