@@ -7,13 +7,6 @@ body {
   letter-spacing: var(--spacing);
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
 .container {
   background: #fff;
   padding: 2.5rem 2rem;
